@@ -1,0 +1,495 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Discoff — compartilhe sua tela com som, voz e controle</title>
+    <meta
+      name="description"
+      content="Discoff é o app de compartilhamento de tela para Windows e Android. Transmita a tela com áudio, fale por voz e controle o computador do outro — direto entre as máquinas, sem servidor no meio."
+    />
+    <meta name="theme-color" content="#0a0c11" />
+
+    <!-- Open Graph: como o link aparece no WhatsApp, Discord e Twitter. -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Discoff — compartilhe sua tela com som, voz e controle" />
+    <meta
+      property="og:description"
+      content="Transmissão de tela com áudio do sistema, voz e controle remoto. Direto entre as máquinas, sem servidor no meio."
+    />
+    <meta property="og:image" content="assets/icon.png" />
+    <meta property="og:locale" content="pt_BR" />
+
+    <link rel="icon" href="assets/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/icon-256.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Atalho de acessibilidade: primeiro Tab leva ao conteúdo. -->
+    <a class="pular" href="#inicio">Ir para o conteúdo</a>
+
+    <header class="topo" id="topo">
+      <div class="envolto topo__linha">
+        <a class="marca" href="#inicio" aria-label="Discoff, início">
+          <img src="assets/icon-256.png" alt="" width="34" height="34" />
+          <span>Discoff</span>
+        </a>
+
+        <nav class="menu" aria-label="Navegação principal">
+          <a href="#recursos">Recursos</a>
+          <a href="#telas">Telas</a>
+          <a href="#como-funciona">Como funciona</a>
+          <a href="#duvidas">Dúvidas</a>
+        </nav>
+
+        <a class="botao botao--pequeno" href="#baixar" data-download>Baixar</a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================================================== HERÓI -->
+      <section class="heroi" id="inicio">
+        <div class="heroi__brilho" aria-hidden="true"></div>
+        <div class="heroi__grade" aria-hidden="true"></div>
+
+        <div class="envolto heroi__conteudo">
+          <p class="etiqueta">
+            <span class="ponto" aria-hidden="true"></span>
+            Windows e Android · versão <span data-versao>4.2.0</span>
+          </p>
+
+          <h1>
+            Mostre sua tela.<br />
+            <span class="gradiente">Do jeito que tem que ser.</span>
+          </h1>
+
+          <p class="heroi__texto">
+            Compartilhe a tela com o áudio do sistema, converse por voz e assuma o
+            controle do outro computador. A transmissão vai direto de uma máquina
+            para a outra — sem passar por servidor no meio.
+          </p>
+
+          <div class="heroi__acoes">
+            <a class="botao botao--grande" href="#baixar" data-download>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                <path d="M12 3v12m0 0l-4-4m4 4l4-4" stroke-linecap="round" stroke-linejoin="round" />
+                <path d="M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke-linecap="round" />
+              </svg>
+              Baixar para Windows
+            </a>
+            <a class="botao botao--fantasma botao--grande" href="#telas">Ver as telas</a>
+          </div>
+
+          <p class="heroi__nota">
+            Gratuito · <span data-tamanho>125 MB</span> · código-fonte aberto
+          </p>
+        </div>
+
+        <div class="envolto heroi__tela">
+          <div class="janela">
+            <div class="janela__barra">
+              <span class="janela__ponto"></span>
+              <span class="janela__ponto"></span>
+              <span class="janela__ponto"></span>
+              <span class="janela__titulo">Discoff</span>
+            </div>
+            <img
+              src="assets/shots/home.png"
+              alt="Tela inicial do Discoff, com a lista de salas e o botão de criar sala"
+              width="1360"
+              height="880"
+              loading="eager"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================== NÚMEROS -->
+      <section class="numeros">
+        <div class="envolto numeros__grade">
+          <div class="numero">
+            <strong>8</strong>
+            <span>pessoas por sala</span>
+          </div>
+          <div class="numero">
+            <strong>1080p</strong>
+            <span>a 60 quadros</span>
+          </div>
+          <div class="numero">
+            <strong>P2P</strong>
+            <span>direto entre as máquinas</span>
+          </div>
+          <div class="numero">
+            <strong>2</strong>
+            <span>plataformas: Windows e Android</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================== RECURSOS -->
+      <section class="secao" id="recursos">
+        <div class="envolto">
+          <p class="secao__etiqueta">Recursos</p>
+          <h2 class="secao__titulo">Tudo que uma transmissão precisa</h2>
+          <p class="secao__texto">
+            Não é só espelhar a tela. É poder mostrar, explicar, ouvir e — quando
+            precisar — resolver com as próprias mãos.
+          </p>
+
+          <div class="cartoes">
+            <article class="cartao cartao--destaque">
+              <div class="cartao__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="2" y="4" width="20" height="13" rx="2" />
+                  <path d="M8 21h8M12 17v4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Tela em alta definição</h3>
+              <p>
+                Até 1080p a 60 quadros por segundo. Você escolhe a qualidade e pode
+                mudar no meio da transmissão, sem derrubar a chamada.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <div class="cartao__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M11 5L6 9H3v6h3l5 4V5z" stroke-linejoin="round" />
+                  <path d="M16 8a5 5 0 010 8M19 5a9 9 0 010 14" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Áudio do sistema</h3>
+              <p>
+                O som que sai do computador vai junto com a imagem. Vídeo, jogo ou
+                música — quem assiste escuta, sem precisar de outra chamada.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <div class="cartao__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <rect x="9" y="2" width="6" height="12" rx="3" />
+                  <path d="M5 11a7 7 0 0014 0M12 18v4" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Voz na mesma sala</h3>
+              <p>
+                Fale enquanto mostra a tela. Com cancelamento de eco e de ruído, para
+                o áudio do jogo não virar microfonia.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <div class="cartao__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M3 3l7.5 18 2.5-7 7-2.5L3 3z" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>Controle remoto</h3>
+              <p>
+                Mouse e teclado do outro computador, com autorização de quem está
+                transmitindo. Para ajudar de verdade, não só descrever onde clicar.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <div class="cartao__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3>Chat de texto</h3>
+              <p>
+                Para mandar um link, um código ou aquela instrução que não cabe na
+                pressa. Fica registrado na sala.
+              </p>
+            </article>
+
+            <article class="cartao">
+              <div class="cartao__icone">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                  <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" stroke-linecap="round" />
+                  <circle cx="9" cy="7" r="4" />
+                  <path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3>Comunidades e canais</h3>
+              <p>
+                Organize tudo em servidores, com canais de voz e de texto. Cada canal
+                é uma sala própria, com permissões separadas.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================== TELAS -->
+      <section class="secao secao--alternada" id="telas">
+        <div class="envolto">
+          <p class="secao__etiqueta">Por dentro</p>
+          <h2 class="secao__titulo">O app, sem maquiagem</h2>
+          <p class="secao__texto">
+            Estas são capturas reais do programa instalado, não montagens.
+          </p>
+
+          <div class="galeria">
+            <figure class="galeria__item galeria__item--largo">
+              <img
+                src="assets/shots/home.png"
+                alt="Tela inicial com saudação, botão de criar sala e lista de salas abertas"
+                width="1360"
+                height="880"
+                loading="lazy"
+              />
+              <figcaption>
+                <strong>Sua base</strong>
+                Crie uma sala privada, entre com um código ou junte-se a uma sala aberta.
+              </figcaption>
+            </figure>
+
+            <figure class="galeria__item">
+              <img
+                src="assets/shots/comunidades.png"
+                alt="Lista de comunidades com canais de voz e texto"
+                width="1360"
+                height="880"
+                loading="lazy"
+              />
+              <figcaption>
+                <strong>Comunidades</strong>
+                Servidores com canais de voz e texto, cada um com suas permissões.
+              </figcaption>
+            </figure>
+
+            <figure class="galeria__item">
+              <img
+                src="assets/shots/descobrir.png"
+                alt="Tela de descoberta com salas abertas para entrar"
+                width="1360"
+                height="880"
+                loading="lazy"
+              />
+              <figcaption>
+                <strong>Descobrir</strong>
+                Salas abertas de outras pessoas, para entrar sem precisar de convite.
+              </figcaption>
+            </figure>
+
+            <figure class="galeria__item">
+              <img
+                src="assets/shots/configuracoes.png"
+                alt="Tela de configurações com dispositivos de áudio e vídeo"
+                width="1360"
+                height="880"
+                loading="lazy"
+              />
+              <figcaption>
+                <strong>Ajustes de áudio e vídeo</strong>
+                Escolha microfone, câmera e qualidade antes de entrar na sala.
+              </figcaption>
+            </figure>
+
+            <figure class="galeria__item">
+              <img
+                src="assets/shots/diagnostico.png"
+                alt="Tela de diagnóstico com testes de rede e conexão"
+                width="1360"
+                height="880"
+                loading="lazy"
+              />
+              <figcaption>
+                <strong>Diagnóstico</strong>
+                Teste de rede, servidor de retransmissão e permissões, em um lugar só.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================== COMO FUNCIONA -->
+      <section class="secao" id="como-funciona">
+        <div class="envolto">
+          <p class="secao__etiqueta">Como funciona</p>
+          <h2 class="secao__titulo">Três passos e você está no ar</h2>
+
+          <ol class="passos">
+            <li class="passo">
+              <span class="passo__numero">1</span>
+              <h3>Baixe e entre</h3>
+              <p>
+                Instale no Windows, crie sua conta e pronto. No Android, o mesmo
+                aplicativo, para acompanhar de onde estiver.
+              </p>
+            </li>
+            <li class="passo">
+              <span class="passo__numero">2</span>
+              <h3>Convide quem vai assistir</h3>
+              <p>
+                Compartilhe o código da sala. Quem receber entra com um clique — sem
+                instalar nada além do app.
+              </p>
+            </li>
+            <li class="passo">
+              <span class="passo__numero">3</span>
+              <h3>Compartilhe a tela</h3>
+              <p>
+                Escolha o monitor ou a janela, ligue o áudio do sistema e comece. O
+                controle remoto fica disponível quando você permitir.
+              </p>
+            </li>
+          </ol>
+
+          <div class="tecnica">
+            <div class="tecnica__icone">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6l8-4z" stroke-linejoin="round" />
+                <path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </div>
+            <div>
+              <h3>Sua tela não passa por um servidor nosso</h3>
+              <p>
+                O vídeo vai direto de uma máquina para a outra, criptografado de ponta
+                a ponta pelo próprio WebRTC. O servidor só apresenta as duas pontas —
+                não vê o que você mostra. Quando a rede não permite conexão direta
+                (4G, Wi-Fi corporativo), entra um retransmissor que também não
+                consegue abrir o conteúdo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================================================== DOWNLOAD -->
+      <section class="baixar" id="baixar">
+        <div class="envolto baixar__envolto">
+          <h2>Pronto para mostrar?</h2>
+          <p>Baixe, instale e comece a compartilhar em menos de um minuto.</p>
+
+          <div class="baixar__opcoes">
+            <a class="baixar__cartao" href="#" data-download data-plataforma="windows">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M3 5.5l7.5-1v7H3v-6zM11.5 4.3L21 3v8.5h-9.5V4.3zM3 12.5h7.5v7L3 18.5v-6zM11.5 12.5H21V21l-9.5-1.3v-7.2z" />
+              </svg>
+              <span class="baixar__rotulo">Windows</span>
+              <span class="baixar__detalhe">Instalador · <span data-tamanho>125 MB</span></span>
+              <span class="baixar__seta" aria-hidden="true">↓</span>
+            </a>
+
+            <a class="baixar__cartao" href="#" data-download data-plataforma="android">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path
+                  d="M7 9h10v8a1 1 0 01-1 1h-1v3h-2v-3h-2v3H9v-3H8a1 1 0 01-1-1V9zM5 9h1v6H5a1 1 0 01-1-1v-4a1 1 0 011-1zm13 0h1a1 1 0 011 1v4a1 1 0 01-1 1h-1V9zM8.5 4.5l-.9-1.6.7-.4 1 1.8a6.5 6.5 0 013.4 0l1-1.8.7.4-.9 1.6A5 5 0 0116 8H8a5 5 0 01.5-3.5zM9.5 6a.6.6 0 100 1.2A.6.6 0 009.5 6zm5 0a.6.6 0 100 1.2.6.6 0 000-1.2z"
+                />
+              </svg>
+              <span class="baixar__rotulo">Android</span>
+              <span class="baixar__detalhe">APK · <span data-tamanho-apk>3,1 MB</span></span>
+              <span class="baixar__seta" aria-hidden="true">↓</span>
+            </a>
+          </div>
+
+          <p class="baixar__nota">
+            Versão <span data-versao>4.2.0</span> · o Windows pode pedir confirmação
+            ao abrir o instalador, porque ele não tem assinatura paga. Se preferir,
+            <a href="#" data-portable>baixe a versão portátil</a>, que não instala
+            nada.
+          </p>
+        </div>
+      </section>
+
+      <!-- ================================================== DÚVIDAS -->
+      <section class="secao" id="duvidas">
+        <div class="envolto envolto--estreito">
+          <p class="secao__etiqueta">Dúvidas</p>
+          <h2 class="secao__titulo">Perguntas frequentes</h2>
+
+          <div class="duvidas">
+            <details class="duvida">
+              <summary>Preciso pagar alguma coisa?</summary>
+              <p>
+                Não. O Discoff é gratuito, sem limite de tempo de chamada e sem marca
+                d'água na transmissão.
+              </p>
+            </details>
+
+            <details class="duvida">
+              <summary>Quantas pessoas cabem numa sala?</summary>
+              <p>
+                Até 8 pessoas. A transmissão é feita direto entre as máquinas, então
+                cada participante a mais consome mais da sua internet. Para
+                transmissões grandes, o ideal é um servidor dedicado — e aí outro
+                tipo de produto resolve melhor.
+              </p>
+            </details>
+
+            <details class="duvida">
+              <summary>Quem vê minha tela consegue mexer no meu computador?</summary>
+              <p>
+                Só se você permitir. O controle remoto é concedido por você, na hora,
+                e pode ser revogado a qualquer momento. Sem a sua autorização, quem
+                assiste apenas vê.
+              </p>
+            </details>
+
+            <details class="duvida">
+              <summary>Funciona com internet ruim?</summary>
+              <p>
+                Sim, com ajustes. O app reduz a qualidade sozinho quando a rede cai e
+                volta a subir quando melhora. Em conexões muito instáveis (4G fraco),
+                ele usa um servidor de retransmissão para manter a chamada de pé.
+              </p>
+            </details>
+
+            <details class="duvida">
+              <summary>O Windows diz que o aplicativo não é reconhecido. É seguro?</summary>
+              <p>
+                É. O aviso aparece porque o instalador não tem certificado de
+                assinatura comercial, que é pago. O código-fonte é aberto e está
+                disponível para conferência. Você pode clicar em "Mais informações" e
+                depois em "Executar assim mesmo".
+              </p>
+            </details>
+
+            <details class="duvida">
+              <summary>Já tenho o ScreenConnect instalado. Preciso desinstalar?</summary>
+              <p>
+                Sim. O app mudou de nome para Discoff, e a atualização automática de
+                versões antigas não consegue concluir sozinha. Desinstale o
+                ScreenConnect antes de instalar esta versão. Sua conta continua
+                funcionando: os dados ficam guardados e são reaproveitados.
+              </p>
+            </details>
+
+            <details class="duvida">
+              <summary>Meus dados ficam guardados?</summary>
+              <p>
+                Só o necessário para a conta: e-mail, nome de perfil e as salas que
+                você criar. O vídeo e o áudio não são gravados nem passam por
+                servidor nosso.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="rodape">
+      <div class="envolto rodape__linha">
+        <div class="rodape__marca">
+          <img src="assets/icon-256.png" alt="" width="26" height="26" />
+          <span>Discoff</span>
+        </div>
+        <nav class="rodape__links" aria-label="Links do rodapé">
+          <a href="https://github.com/scoffyt/screenconnect" target="_blank" rel="noopener">Código-fonte</a>
+          <a href="https://github.com/scoffyt/screenconnect/releases" target="_blank" rel="noopener">Versões</a>
+          <a href="#duvidas">Dúvidas</a>
+        </nav>
+        <p class="rodape__nota">
+          Feito para mostrar a tela sem complicação.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
