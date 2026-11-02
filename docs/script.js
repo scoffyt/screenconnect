@@ -12,7 +12,16 @@
 const REPO = 'scoffyt/screenconnect'
 const API = `https://api.github.com/repos/${REPO}/releases/latest`
 const PAGINA_VERSOES = `https://github.com/${REPO}/releases`
-const DOWNLOAD_DIRETO = `https://github.com/${REPO}/releases/latest/download`
+
+/*
+ * Link direto para o instalador, sem passar pela API.
+ *
+ * O caminho `/releases/latest/download/<arquivo>` só funciona com o nome do
+ * arquivo no fim — sem ele, o GitHub devolve 404. Como o nome carrega a versão,
+ * ele não pode ser fixado aqui; usamos a página de versões como plano B, que
+ * sempre existe e nunca aponta para um arquivo que não está lá.
+ */
+const PAGINA_DOWNLOADS = `https://github.com/${REPO}/releases/latest`
 
 /** Formata bytes em MB com vírgula decimal, como se escreve em português. */
 function emMB(bytes) {
@@ -71,7 +80,9 @@ function aplicarDados(info, dados) {
 
 /** Liga os botões aos arquivos certos. */
 function ligarBotoes(dados) {
-  const urlWindows = dados.instalador?.browser_download_url ?? `${DOWNLOAD_DIRETO}/Discoff-Setup-latest.exe`
+  // Sem o arquivo certo, mandamos para a página de versões em vez de inventar
+  // uma URL que pode não existir.
+  const urlWindows = dados.instalador?.browser_download_url ?? PAGINA_DOWNLOADS
   const urlAndroid = dados.android?.browser_download_url ?? PAGINA_VERSOES
   const urlPortatil = dados.portatil?.browser_download_url ?? PAGINA_VERSOES
 
@@ -95,7 +106,7 @@ function ligarBotoes(dados) {
 /** Sem a API, os links ainda precisam funcionar. */
 function usarFallback() {
   document.querySelectorAll('[data-download]').forEach((el) => {
-    el.href = el.dataset.plataforma === 'android' ? PAGINA_VERSOES : DOWNLOAD_DIRETO
+    el.href = el.dataset.plataforma === 'android' ? PAGINA_VERSOES : PAGINA_DOWNLOADS
     el.target = '_blank'
     el.rel = 'noopener'
   })
